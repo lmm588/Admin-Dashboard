@@ -1,6 +1,6 @@
 :root {
-    --font-size-large: 28px;
-    --font-size-regular: 24px;
+    --font-size-large: 24px;
+    --font-size-regular: 18px;
     --space-s: 5px;
     --space-m: 20px;
     --space-l: 30px;
@@ -35,8 +35,8 @@ button {
     background-color: var(--color-primary);
     color: white;
     border-radius: 20px;
-    width: clamp(50px, 130px, 150px);
-    height: clamp(20px, 60px, 70px);
+    width: clamp(50px, 110px, 150px);
+    height: clamp(20px, 50px, 70px);
     margin-left: var(--space-m);
     font-size: var(--font-size-regular);
 }
@@ -73,9 +73,6 @@ button:hover {
 .material-icons.md-48 {
     font-size: 48px;
 }
-
-
-
 
 .header {
     grid-area: 1 / 2 / 1 / 2;
@@ -155,9 +152,10 @@ input:first-of-type {
     background-color: var(--color-primary);
     padding: var(--space-s);
     display: grid;
-    grid-template-rows: 100px 1fr 1fr;
+    grid-template-rows: 100px 400px 300px;
     z-index: 2;
     color: white;
+    line-height: 40px;
 }
 
 .sidebar-header {
@@ -170,7 +168,7 @@ input:first-of-type {
     padding: var(--space-l);
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 40px 1fr 0.5fr 1fr;
+    grid-template-rows: 30px 2fr 30px 2fr;
     background-color: #e2e8f0;
     color: black;
     overflow-y: auto;
@@ -181,15 +179,14 @@ input:first-of-type {
     grid-area: 2 / 1 / 4 / 2;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 600px));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
 }
 
 .cards-wrapper .announcements {
     grid-area: 2 / 2 / 3 / 3;
     background-color: white;
     height: fit-content;
-    line-height: 40px;
     padding: var(--space-m);
     border-radius: 20px;
 
@@ -234,12 +231,11 @@ input:first-of-type {
 }
 
 .project-card {
-    padding-left: var(--space-m);
-    padding-right: var(--space-m);
+    padding: var(--space-l);
     align-content: center;
     font-weight: 300;
-    height: 300px;
-    width: auto;
+    height: fit-content;
+    width: 350px;
     background-color: white;
     border-radius: 10px;
     border-left: 5px solid var(--color-primary);
@@ -269,7 +265,7 @@ h3:nth-of-type(2) {
 }
 
 .announcements>ul>.list-item:nth-last-child(1n + 2) {
-    border-bottom: 2px solid #083344;
+    border-bottom: 1px solid #20292c44;
     padding-bottom: var(--space-m);
 }
 
