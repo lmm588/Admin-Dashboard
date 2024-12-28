@@ -110,7 +110,7 @@ button:hover {
 
 #user-info-wrapper {
     display: flex;
-    align-items: center;   
+    align-items: center;
     background-color: var(--color-primary);
     padding-right: var(--font-size-regular);
     border-radius: 30px;
@@ -290,7 +290,7 @@ h3[section="trending"] {
     margin-bottom: var(--space-s);
 }
 
-.user-profile > div > p:last-of-type {
+.user-profile>div>p:last-of-type {
     font-size: 2.5rem;
 }
 
