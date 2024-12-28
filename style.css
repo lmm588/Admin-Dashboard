@@ -1,8 +1,12 @@
 :root {
-    --font-size-l: 40px;
+    --font-size-large: 30px;
+    --font-size-regular: 20px;
     --space-s: 5px;
     --space-m: 20px;
     --space-l: 30px;
+    --color-primary: #06b6d4;
+    --color-dark: #083344;
+    --color-light: #a5f3fc;
 }
 
 * {
@@ -11,7 +15,7 @@
 }
 
 body {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-regular);
     color: white;
 }
 
@@ -43,41 +47,48 @@ li {
 
 .header {
     grid-area: 1 / 2 / 1 / 2;
+    box-shadow: 0px 5px 10px 0px darkgray;
+    z-index: 1;
 }
 
 .sidebar {
     grid-area: 1 / 1 / 5 / 1;
-    background-color: aquamarine;
+    background-color: var(--color-primary);
     padding: var(--space-s);
     display: grid;
     grid-template-rows: 100px 1fr 1fr;
+    z-index: 2;
+}
+
+.sidebar-header {
+    font-weight: 600;
+    font-size: var(--font-size-large);
 }
 
 .cards-wrapper {
     grid-area: 2 / 2 / 5 / 2;
-    background-color: grey;
+    padding: var(--space-l);
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: #e2e8f0;
+    color: black;
 }
 
 .cards-wrapper .projects {
     grid-area: 1 / 1 / 3 / 1;
-    background-color: blue;
 }
 
 .cards-wrapper .announcements {
     grid-area: 2 / 2 / 2 / 2;
-    background: red;
 }
 
 .cards-wrapper .trending {
     grid-area: 1 / 2 / 1 / 2;
-    background-color: green;
 }
 
 .list-item {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
