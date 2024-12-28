@@ -1,9 +1,8 @@
 :root {
     --font-size-l: 40px;
-    --space-s: 10px;
+    --space-s: 5px;
     --space-m: 20px;
     --space-l: 30px;
-    
 }
 
 * {
@@ -13,18 +12,34 @@
 
 body {
     font-size: var(--font-size-l);
+    color: white;
 }
 
-ul, li {
+ul,
+li {
     list-style: none;
 }
+
 
 .main-content {
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr 6fr;
-    grid-template-columns: minmax(200px, 1fr) 6fr;
+    grid-template-columns: minmax(300px, 1fr) 6fr;
 }
+
+.material-icons {
+    margin-right: var(--space-m);
+    color: white;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+
+
 
 .header {
     grid-area: 1 / 2 / 1 / 2;
@@ -33,9 +48,9 @@ ul, li {
 .sidebar {
     grid-area: 1 / 1 / 5 / 1;
     background-color: aquamarine;
-    padding: var(--space-m);
+    padding: var(--space-s);
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
 }
 
 .cards-wrapper {
@@ -59,4 +74,11 @@ ul, li {
 .cards-wrapper .trending {
     grid-area: 1 / 2 / 1 / 2;
     background-color: green;
+}
+
+.list-item {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
