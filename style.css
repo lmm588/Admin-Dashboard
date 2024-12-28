@@ -12,6 +12,8 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 body {
@@ -29,9 +31,14 @@ button {
     color: white;
     border-radius: 20px;
     padding: var(--space-s);
-    width: 80px;
-    height: 30px;
+    width: 120px;
+    height: 40px;
     margin-left: var(--space-m);
+}
+
+button:hover {
+    opacity: 60%;
+    cursor: pointer;
 }
 
 .main-content {
@@ -89,9 +96,8 @@ button {
 }
 
 .user-info>img {
-    aspect-ratio: 1;
-    width: 30px;
-    height: auto;
+    width: auto;
+    height: 50px;
     border-radius: 100%;
 }
 
@@ -101,9 +107,8 @@ button {
 }
 
 .user-profile>img {
-    aspect-ratio: 1;
-    width: 60px;
-    height: auto;
+    width: auto;
+    height: 100px;
     border-radius: 100%;
     margin-left: var(--space-m);
     margin-right: var(--space-l);
@@ -117,10 +122,10 @@ button {
 input:first-of-type {
     border-radius: 20px;
     width: 50%;
-    height: 40%;
+    height: 50%;
     border: none;
     background-color: lightgrey;
-    padding: var(--space-s);
+    padding: 15px;
 }
 
 .user-profile>div>p:last-of-type {
