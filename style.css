@@ -309,3 +309,28 @@ span[type="notification-bell"]:hover {
     transition: 0.2s ease-out;
     cursor: pointer;
 }
+
+@media (max-width:1483px) { /* laptops and lower res desktop */
+    :root {
+    --font-size-large: 22px;
+    --font-size-regular: 16px;
+    }
+
+    .sidebar {
+        padding: 0px;
+        line-height: 5px;
+        grid-template-rows: 100px 300px 100px;
+    }
+
+    .project-card {
+        width: 300px;
+    }
+
+    .cards-wrapper .projects{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    h3[section="trending"] {
+        white-space: nowrap
+    }
+}
