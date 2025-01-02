@@ -121,8 +121,8 @@ button:hover {
 
 .user-info>div>img,
 .trending>ul>li>img {
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 100%;
     margin-right: var(--space-m);
 }
@@ -165,10 +165,10 @@ input:first-of-type {
     background-color: var(--color-primary);
     padding: var(--space-s);
     display: grid;
-    grid-template-rows: 100px 400px 300px;
+    grid-template-rows: 8rem 25rem 10rem;
     z-index: 2;
     color: white;
-    line-height: 40px;
+    line-height: 2.5rem;
 }
 
 .sidebar-header {
@@ -181,7 +181,7 @@ input:first-of-type {
     padding: var(--space-l);
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 30px 2fr 30px 2fr;
+    grid-template-rows: 1rem 2fr 1rem 2fr;
     background-color: #e2e8f0;
     color: black;
     overflow-y: auto;
@@ -192,7 +192,7 @@ input:first-of-type {
     grid-area: 2 / 1 / 4 / 2;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 10px;
 }
 
@@ -212,6 +212,10 @@ input:first-of-type {
     border-radius: 20px;
     padding: var(--space-m);
     line-height: 33px;
+}
+
+.cards-wrapper .projects, .cards-wrapper .announcements, .cards-wrapper .trending {
+    margin-top: var(--space-m);
 }
 
 .sidebar .list-item {
@@ -248,7 +252,7 @@ input:first-of-type {
     align-content: center;
     font-weight: 300;
     height: fit-content;
-    width: 400px;
+    width: 25rem;
     background-color: white;
     border-radius: 10px;
     border-left: 5px solid var(--color-primary);
@@ -318,16 +322,20 @@ span[type="notification-bell"]:hover {
 
     .sidebar {
         padding: 0px;
-        line-height: 5px;
+        line-height: 0.5rem;
         grid-template-rows: 100px 300px 100px;
     }
 
     .project-card {
-        width: 300px;
+        width: 20rem;
     }
 
     .cards-wrapper .projects{
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+    h3 {
+        margin-bottom: 20px;
     }
 
     h3[section="trending"] {
