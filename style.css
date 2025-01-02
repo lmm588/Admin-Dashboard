@@ -341,4 +341,8 @@ span[type="notification-bell"]:hover {
     h3[section="trending"] {
         white-space: nowrap
     }
+
+    .sidebar .list-item::before {
+        inset: 5px 0px 0 -10px;
+    }
 }
